@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <main>
+        <form>
+            <div class="pai">
+                <div class="filha">
+                    <select id="escolha">
+                        <option> </option>
+                        <option id="cifra" value="cifra">Cifra de Cesar</option>
+                    
+                        <option id="base64" value="base64">Base 64</option>
+                    </select>
+                
+                    <label for="frase">Insira o texto que deseja criptografar:</label>
+                    <input type="text" id="frase">
+                
+                <div id="incrementando"></div>
+            
+                    <label for="cod"><input type="radio" id="cod" name="escolha-cod">
+                        Codificar</label>
+                    <label for="decod"><input type="radio" id="decod" name="escolha-cod">
+                        Decodificar</label>
+                
+                <div id="mensagem"></div>
+                
+                    <input type="button" value="Iniciar" id="iniciar">
+                </div>
+                <div id="codificacao"></div>
+                <div id="decodificar"></div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
